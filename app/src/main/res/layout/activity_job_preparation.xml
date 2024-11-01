@@ -1,0 +1,171 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/job_preparation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobPreparation">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_job_preparation"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_activity_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="@string/job_preparation"
+            android:textColor="@color/asset_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_button"
+            android:contentDescription="Profile"
+            android:src="@drawable/ic_profile"
+            app:tint="@color/asset_light" />
+    </LinearLayout>
+
+    <!-- Grid Layout for Buttons -->
+    <GridLayout
+        android:id="@+id/button_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:foregroundGravity="center"
+        android:padding="16dp"
+        android:rowCount="2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+        <Button
+            android:id="@+id/btn_practice_questions"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="Practice Questions"
+            android:textColor="@color/asset_light"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_mock_interviews"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="Mock Interviews"
+            android:textColor="@color/asset_light"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_skill_tests"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="Test Your SKills"
+            android:textColor="@color/asset_light"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_checklist"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:text="Interview Checklist"
+            android:textColor="@color/asset_light"
+            android:textSize="18sp" />
+
+    </GridLayout>
+
+    <!-- Bottom Nav Bar-->
+<LinearLayout
+android:id="@+id/linearLayout2"
+android:layout_width="match_parent"
+android:layout_height="55dp"
+android:background="@color/color_job_preparation"
+android:gravity="center_vertical"
+android:orientation="horizontal"
+android:paddingStart="4dp"
+android:paddingEnd="4dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent">
+
+<ImageButton
+    android:id="@+id/btn_job_preparation"
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="1"
+    android:background="@color/asset_light"
+    android:contentDescription="Job Preparation"
+    android:src="@drawable/ic_job_preparation"
+    app:tint="@color/color_job_preparation" />
+
+<ImageButton
+    android:id="@+id/btn_make_cv"
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="1"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Make CV"
+    android:src="@drawable/ic_make_cv"
+    app:tint="@color/asset_light" />
+
+<ImageButton
+    android:id="@+id/btn_career_guidelines"
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="1"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Career Guidelines"
+    android:src="@drawable/ic_career_guidelines"
+    app:tint="@color/asset_light" />
+
+<ImageButton
+    android:id="@+id/btn_skill_development"
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="1"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Skill Development"
+    android:src="@drawable/ic_skills_development"
+    app:tint="@color/asset_light" />
+
+<ImageButton
+    android:id="@+id/btn_language_learning"
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="1"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:contentDescription="Language Learning"
+    android:src="@drawable/ic_language_learning"
+    app:tint="@color/asset_light" />
+</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

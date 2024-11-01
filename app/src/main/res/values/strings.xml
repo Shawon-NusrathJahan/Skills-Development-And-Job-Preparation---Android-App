@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NEXT STEP</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="welcome_message">Take the next step toward success. \nDiscover tools to shape your future.</string>
+    <string name="job_preparation">Job Preparation</string>
+    <string name="make_cv">Create CV</string>
+    <string name="career_guidelines">Career Guidelines</string>
+    <string name="skills_development">Skills Development</string>
+    <string name="language_learning">Language Learning</string>
+</resources>

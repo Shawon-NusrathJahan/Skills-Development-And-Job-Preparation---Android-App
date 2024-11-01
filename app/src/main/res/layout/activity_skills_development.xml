@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/skills_development"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkillsDevelopment">
+
+    <!-- Include the common layout with top and bottom bars -->
+    <include layout="@layout/activity_common_base" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Add your UI components for Skill Development here -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skill Development Dashboard"
+            android:textSize="24sp"
+            android:layout_centerInParent="true" />
+
+        <!-- Other UI elements for skill development -->
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
