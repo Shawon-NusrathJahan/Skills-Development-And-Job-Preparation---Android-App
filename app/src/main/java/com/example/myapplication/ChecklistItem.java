@@ -1,5 +1,5 @@
 // ChecklistItem.java
-package com.example.myapplication; // Adjust this package name to match your project structure
+package com.example.myapplication;
 
 public class ChecklistItem {
     private String text;

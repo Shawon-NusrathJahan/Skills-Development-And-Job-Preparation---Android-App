@@ -76,7 +76,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
+                        android:src="@drawable/ic_job_preparation" />
                     <!-- Label -->
                     <TextView
                         android:layout_width="wrap_content"
@@ -118,7 +118,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
+                        android:src="@drawable/ic_make_cv" />
                     <!-- Label -->
                     <TextView
                         android:layout_width="wrap_content"
@@ -162,7 +162,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
+                        android:src="@drawable/ic_career_guidelines" />
                     <!-- Label -->
                     <TextView
                         android:layout_width="wrap_content"
@@ -204,7 +204,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
+                        android:src="@drawable/ic_skills_development" />
                     <!-- Label -->
                     <TextView
                         android:layout_width="wrap_content"
@@ -246,7 +246,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
+                        android:src="@drawable/ic_language_learning" />
                     <!-- Label -->
                     <TextView
                         android:layout_width="wrap_content"
