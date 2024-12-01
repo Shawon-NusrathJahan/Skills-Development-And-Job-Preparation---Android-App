@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-public class MakeCV extends BaseActivity {
+public class MakeCV extends DashboardActivity {
 
     private EditText etName, etAddress, etContact, etEducation, etSkills, etExperienceTitle, etExperienceDescription, etLanguages;
     private Button btnGenerate;

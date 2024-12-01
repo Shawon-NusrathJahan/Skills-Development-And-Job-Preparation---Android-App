@@ -1,4 +1,5 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/job_preparation"
@@ -34,9 +35,9 @@
             android:id="@+id/btn_profile"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@drawable/circle_button"
+            android:background="@drawable/button_circle"
             android:contentDescription="Profile"
-            android:src="@drawable/ic_profile"
+            android:src="@drawable/icon_profile"
             app:tint="@color/asset_light" />
     </LinearLayout>
 
@@ -105,7 +106,7 @@
     </GridLayout>
 
     <!-- Bottom Nav Bar-->
-<LinearLayout
+    <LinearLayout
 android:id="@+id/linearLayout2"
 android:layout_width="match_parent"
 android:layout_height="55dp"
@@ -168,4 +169,5 @@ app:layout_constraintStart_toStartOf="parent">
     android:src="@drawable/ic_language_learning"
     app:tint="@color/asset_light" />
 </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,296 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/asset_light">
+    android:id="@+id/main"
+    tools:context=".MainActivity">
 
+    <!-- App Bar Layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main"
+        <!-- Material Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+
+            <!-- App Logo or Title -->
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Profile Icon -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btn_profile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                app:srcCompat="@drawable/icon_profile"
+                app:contentDescription="Profile" />
+
+            <!-- Notifications Icon -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btn_notifications"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                app:srcCompat="@drawable/icon_notifications"
+                app:contentDescription="Notifications" />
+
+            <!-- Search Icon -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btn_search"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                app:srcCompat="@drawable/icon_search"
+                app:contentDescription="Search" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="30dp">
-
-
-        <ImageView
-            android:id="@+id/logo_icon"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_marginVertical="17dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/logo" />
-
-        <TextView
-            android:id="@+id/welcome_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:padding="8dp"
-            android:text="@string/welcome_message"
-            android:textColor="#01203A"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo_icon" />
+        android:layout_marginTop="?attr/actionBarSize">
 
         <LinearLayout
-            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="10dp"
-            android:paddingBottom="15dp"
             android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcome_message">
+            android:padding="16dp">
 
-            <!-- JOB PREP -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_job_prep"
+            <!-- Welcome Message -->
+            <TextView
+                android:id="@+id/welcome_message"
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="10dp">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/welcome_message"
+                android:textColor="#01203A"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="346dp"
-                    android:background="@drawable/card_bg_job_preparation"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <!-- Icon -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
-                    <!-- Label -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:text="@string/job_preparation"
-                        android:textColor="@color/primary"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                    <!-- Description -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Practice interviews and skill tests to boost your confidence."
-                        android:textColor="@color/asset_light"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- MAKE RESUME/CV -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_cv"
+            <!-- Grid View for Features -->
+            <GridView
+                android:id="@+id/card_grid_view"
                 android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="346dp"
-                    android:background="@drawable/card_bg_make_cv"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <!-- Icon -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
-                    <!-- Label -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:text="@string/make_cv"
-                        android:textColor="@color/primary"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                    <!-- Description -->
-                    <TextView
-                        android:id="@+id/card_description"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Craft a standout resume tailored to your career goals."
-                        android:textColor="@color/asset_light"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- CAREER GUIDE -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_career_guide"
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/card_bg_career_guidelines"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="346dp"
-                    android:background="@drawable/card_bg_career_guidelines"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <!-- Icon -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
-                    <!-- Label -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:text="@string/career_guidelines"
-                        android:textColor="@color/primary"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                    <!-- Description -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Explore career paths and get expert tips to guide your journey"
-                        android:textColor="@color/asset_light"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- SKILL DEVELOP -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_skills_develop"
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="346dp"
-                    android:background="@drawable/card_bg_skill_development"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <!-- Icon -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
-                    <!-- Label -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:text="@string/skills_development"
-                        android:textColor="@color/primary"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                    <!-- Description -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Build key skills with courses, workshops, and self-assessments."
-                        android:textColor="@color/asset_light"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- LEARNING LANGUAGE -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_lang_learn"
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="346dp"
-                    android:background="@drawable/card_bg_lang_learning"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <!-- Icon -->
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@mipmap/ic_launcher_round" />
-                    <!-- Label -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:text="@string/language_learning"
-                        android:textColor="@color/primary"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                    <!-- Description -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Expand your skills with new languages."
-                        android:textColor="@color/asset_light"
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:horizontalSpacing="8dp"
+                android:verticalSpacing="8dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:gravity="center"/>
 
         </LinearLayout>
 
-        <!-- Copyright Text ...hehe -->
-        <TextView
-            android:id="@+id/copyright_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="©NusrathJahanShawon"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:letterSpacing="0.1"
-            android:textStyle="italic"
-            android:gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="40dp"
-            android:paddingVertical="20dp" />
+    </ScrollView>
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

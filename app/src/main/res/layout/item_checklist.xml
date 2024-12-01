@@ -26,6 +26,6 @@
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Delete item"
-        android:src="@drawable/ic_delete"
+        android:src="@drawable/icon_delete"
         tools:ignore="TouchTargetSizeCheck" />
 </LinearLayout>
