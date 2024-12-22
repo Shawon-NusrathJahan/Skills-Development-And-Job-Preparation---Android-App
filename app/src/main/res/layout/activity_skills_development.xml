@@ -8,7 +8,7 @@
     tools:context=".SkillsDevelopment">
 
     <!-- Include the common layout with top and bottom bars -->
-    <include layout="@layout/activity_common_base" />
+    <include layout="@layout/activity_dashboard" />
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"

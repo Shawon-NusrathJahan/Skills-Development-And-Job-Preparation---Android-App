@@ -5,7 +5,7 @@
     android:id="@+id/common_base"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BaseActivity">
+    tools:context=".DashboardActivity">
 
     <!-- Top Bar -->
     <LinearLayout
@@ -37,7 +37,7 @@
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="Profile"
-            android:src="@drawable/ic_profile"
+            android:src="@drawable/icon_profile"
             app:tint="@color/asset_medium" />
     </LinearLayout>
 

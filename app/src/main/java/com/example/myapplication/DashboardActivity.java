@@ -9,13 +9,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-public class BaseActivity extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity {
     TextView tvActivityName;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_common_base);
+        setContentView(R.layout.activity_dashboard);
 
 
         setupBottomNavigation();

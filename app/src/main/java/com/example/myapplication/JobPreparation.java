@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class JobPreparation extends BaseActivity {
+public class JobPreparation extends DashboardActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">NEXT STEP</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis consectetur adipiscing elit, aute irure dolor in</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
@@ -9,4 +10,20 @@
     <string name="career_guidelines">Career Guidelines</string>
     <string name="skills_development">Skills Development</string>
     <string name="language_learning">Language Learning</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_cv_subtext">Craft a standout resume tailored to your career goals.</string>
+    <string name="job_preparation_subtext">Practice interviews and skill tests to boost your confidence.</string>
+    <string name="career_guidelines_subtext">Explore career paths and get expert tips to guide your journey</string>
+    <string name="skills_development_subtext">Build key skills with courses, workshops, and self-assessments.</string>
+    <string name="language_learning_subtext">Expand your skills with new languages.</string>
 </resources>

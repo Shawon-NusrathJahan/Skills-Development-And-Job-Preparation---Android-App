@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "352374888670",
+    "project_id": "sdajp-hub",
+    "storage_bucket": "sdajp-hub.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352374888670:android:196da78f9770483d80ca4f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfRMdxx4wwsTmy_P8USQzUcyhyD_w_fjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
