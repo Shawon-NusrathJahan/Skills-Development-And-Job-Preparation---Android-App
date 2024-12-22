@@ -89,20 +89,20 @@
                 android:gravity="center"
                 android:text="@string/welcome_message"
                 android:textColor="#01203A"
-                android:textSize="17sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <!-- Grid View for Features -->
             <GridView
                 android:id="@+id/card_grid_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="409dp"
                 android:layout_marginTop="16dp"
+                android:gravity="center"
                 android:horizontalSpacing="8dp"
-                android:verticalSpacing="8dp"
                 android:numColumns="3"
                 android:stretchMode="columnWidth"
-                android:gravity="center"/>
+                android:verticalSpacing="8dp" />
 
         </LinearLayout>
 

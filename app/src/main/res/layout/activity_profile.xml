@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".ProfileActivity">
 
     <!-- AppBarLayout for toolbar -->
@@ -22,7 +23,6 @@
             android:background="@color/primary"
             android:titleTextColor="@android:color/white"
             android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-            app:navigationIcon="@drawable/icon_profile"
             app:title="Profile" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -30,11 +30,16 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:layout_marginTop="?attr/actionBarSize">
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp">
 
 
-
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:text="Logout" />
     </ScrollView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

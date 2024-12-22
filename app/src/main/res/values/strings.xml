@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">NEXT STEP</string>
+
+    <string name="api_key">AIzaSyCG83rmoUN1UCJZXIA_4zt_8S8TV7-cVlI</string>
+
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis consectetur adipiscing elit, aute irure dolor in</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="dummy_button">Dummy Button</string>
